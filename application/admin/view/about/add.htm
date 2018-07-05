@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+
+    {include file='public/title'}
+    <script src="__ADMIN__/ueditor/ueditor.config.js"></script>
+    <script src="__ADMIN__/ueditor/ueditor.all.min.js"></script>
+    <script src="__ADMIN__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+</head>
+<body>
+
+<!-- 头部 -->
+{include file="public/top"}
+<!-- /头部 -->
+
+<div class="main-container container-fluid">
+    <div class="page-container">
+        <!-- Page Sidebar -->
+        {include file="public/left"}
+        <!-- /Sidebar Menu -->
+    </div>
+    <!-- /Page Sidebar -->
+    <!-- Page Content -->
+    <div class="page-content">
+        <!-- Page Breadcrumb -->
+        <div class="page-breadcrumbs">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">系统</a>
+                </li>
+                <li>
+                    <a href="{:url('lst')}">企业关于</a>
+                </li>
+                <li class="active">关于编辑</li>
+            </ul>
+        </div>
+        <!-- /Page Breadcrumb -->
+
+        <!-- Page Body -->
+        <div class="page-body">
+            <!--<img src="/Tp5Enterprise/public/uploads/20180624\1.jpg" alt="">-->
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <div class="widget-header bordered-bottom bordered-blue">
+                            <span class="widget-caption">编辑</span>
+                        </div>
+                        <div class="widget-body">
+                            <div id="horizontal-form">
+                                <form class="form-horizontal" role="form"  method="post">
+
+                                    <div class="form-group">
+                                        <label for="username"  required="" class="col-sm-2 control-label no-padding-right">内容</label>
+                                        <div class="col-sm-6">
+                                            <textarea id="content" name="content">{$a.content}</textarea>
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-default">确定</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- /Page Body -->
+    </div>
+    <!-- /Page Content -->
+</div>
+</div>
+
+{include file="public/footer"}
+<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    UE.getEditor('content',{initialFrameWidth:800,initialFrameHeight:400,});
+</script>
+
+</body></html>

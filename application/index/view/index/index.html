@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        {include file='common/title'}
+
+</head>
+<body>
+     {include file='common/header'}
+
+    <div class="widewrapper main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 blog-main">
+                    <div class="row">
+
+                        {volist name='article' id='a'}
+                        <div class="col-md-6 col-sm-6">
+                            <article class=" blog-teaser">
+                                <header>
+                                    <a href="{:url('Test/index',['id'=>$a.id])}"><img src="{:substr($a.thumb,11)}" alt=""></a>
+                                    <h3><a href="{:url('Test/index',['id'=>$a.id])}">{$a.title}</a></h3>
+                                    <span class="meta">{:date('Y-m-d H:i:s',$a.date)}, {$a.author}</span>
+                                    <hr>
+                                </header>
+                            
+                            </article>
+                        </div>
+                        {/volist}
+
+                    </div>
+                    <div style="text-align: right">
+                        {$article->render()}
+                    </div>
+                    <div class="paging">
+
+                    </div>
+                </div>
+            {include file='common/right'}
+
+
+    {include file='common/footer'}
+    
+    <script src="__INDEX__/js/jquery.min.js"></script>
+    <script src="__INDEX__/js/bootstrap.min.js"></script>
+    <script src="__INDEX__/js/modernizr.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {include file='common/title'}
+    <style>
+        body{
+            background: url("../../../../../../../Tp5Blog/public/uploads/{$conf.background}");
+        }
+
+    </style>
+
+</head>
+<body>
+{include file='common/header'}
+
+<div class="widewrapper main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+                <article class="blog-post">
+                    <header>
+
+                        <div class="lead-image">
+                            <img src="img/single-post.jpg" alt="" class="img-responsive">
+
+                        </div>
+                    </header>
+                    <div class="body">
+                        <h1>{$details.title}</h1>
+                        <div class="meta">
+                            <i class="fa fa-user"></i>{$details.author} <i class="fa fa-calendar"></i>{:date('Y-m-d H:i:s',$details.date)}<i class="fa fa-comments"></i><span class="data"><a href="#comments">{$num} 条评论</a></span>
+                        </div>
+                        {$details.content}
+                    </div>
+                </article>
+
+
+                <aside class="comments" id="comments">
+                    <hr>
+
+                    <h2><i class="fa fa-comments"></i> {$num} 条评论</h2>
+
+                    {volist name='comment' id='c'}
+                    <article class="comment">
+                        <header class="clearfix">
+                            <div class="meta">
+                                <h3><a href="#">{$c.name}</a></h3>
+                                <span class="date">
+                                      {:date('Y-m-d H:i:s',$c.date)}
+                                    </span>
+
+                            </div>
+                        </header>
+                        <div class="body">
+                                    {$c.comment}
+                        </div>
+                    </article>
+                    {/volist}
+
+
+
+
+
+                <aside class="create-comment" id="create-comment">
+                    <hr>
+
+                    <h2><i class="fa fa-pencil"></i> 发表评论</h2>
+
+                    <form action="#" method="post" accept-charset="utf-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="name" id="comment-name" placeholder="你的name" class="form-control input-lg">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" name="email" id="comment-email" placeholder="电子邮箱" class="form-control input-lg">
+                            </div>
+                        </div>
+
+
+                        <textarea rows="10" name="comment" id="comment-body" placeholder="你的评论" class="form-control input-lg"></textarea>
+
+                        <div class="buttons clearfix">
+                            <button type="submit" class="btn btn-xlarge btn-clean-one">Submit</button>
+                        </div>
+                    </form>
+                </aside>
+            </div>
+            {include file='common/right'}
+
+{include file='common/footer'}
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.js"></script>
+
+</body>
+</html>

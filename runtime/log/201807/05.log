@@ -1,0 +1,814 @@
+---------------------------------------------------------------
+[ 2018-07-05T12:18:15+08:00 ] ::1 ::1 GET /Tp5Blog/public/
+[ info ] localhost/Tp5Blog/public/ [运行时间：0.365223s][吞吐率：2.74req/s] [内存消耗：5,420.66kb] [文件加载：60]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/public/index/contact/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=s600spp191hgjqpodf8v779951',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\Tp5Blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\public/../application/index\view\index\index.html [ array (
+  0 => 'conf',
+  1 => 'nivo',
+  2 => 'relevant',
+  3 => 'recent',
+  4 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002651s ] mysql:dbname=tp5blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_conf` [ RunTime:0.047065s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.047151s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,5 [ RunTime:0.002141s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001821s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001279s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id asc LIMIT 0,5 [ RunTime:0.002660s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,3 [ RunTime:0.001861s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,8 [ RunTime:0.003113s ]
+---------------------------------------------------------------
+[ 2018-07-05T12:18:24+08:00 ] ::1 ::1 GET /Tp5Blog/public/admin/login/logout.html
+[ info ] localhost/Tp5Blog/public/admin/login/logout.html [运行时间：0.166917s][吞吐率：5.99req/s] [内存消耗：3,353.99kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/public/admin/manage/lst.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=s600spp191hgjqpodf8v779951',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->logout[ C:\wamp\www\Tp5Blog\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T12:18:32+08:00 ] ::1 ::1 GET /Tp5Blog/public/index/test/index/id/19.html
+[ info ] localhost/Tp5Blog/public/index/test/index/id/19.html [运行时间：0.351554s][吞吐率：2.84req/s] [内存消耗：5,254.46kb] [文件加载：60]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=s600spp191hgjqpodf8v779951',
+)
+[ info ] [ PARAM ] array (
+  'id' => '19',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Test->index[ C:\wamp\www\Tp5Blog\application\index\controller\Test.php ]
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\public/../application/index\view\test\index.html [ array (
+  0 => 'conf',
+  1 => 'nivo',
+  2 => 'relevant',
+  3 => 'recent',
+  4 => 'details',
+  5 => 'comment',
+  6 => 'num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012447s ] mysql:dbname=tp5blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_conf` [ RunTime:0.044058s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,5 [ RunTime:0.002133s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id asc LIMIT 0,5 [ RunTime:0.002712s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,3 [ RunTime:0.001582s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_comment` [ RunTime:0.044890s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_comment` WHERE  `aid` = 19 LIMIT 1 [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_comment` WHERE  `aid` = 19 LIMIT 0,10 [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_comment` WHERE  `aid` = 19 LIMIT 1 [ RunTime:0.000735s ]
+---------------------------------------------------------------
+[ 2018-07-05T12:18:33+08:00 ] ::1 ::1 GET /Tp5Blog/public/index/test/index/id/js/bootstrap.min.js
+[ info ] localhost/Tp5Blog/public/index/test/index/id/js/bootstrap.min.js [运行时间：0.464936s][吞吐率：2.15req/s] [内存消耗：4,957.45kb] [文件加载：58]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/Tp5Blog/public/index/test/index/id/19.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=s600spp191hgjqpodf8v779951',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'js',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Test->index[ C:\wamp\www\Tp5Blog\application\index\controller\Test.php ]
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\public/../application/index\view\test\index.html [ array (
+  0 => 'conf',
+  1 => 'nivo',
+  2 => 'relevant',
+  3 => 'recent',
+  4 => 'details',
+  5 => 'comment',
+  6 => 'num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002907s ] mysql:dbname=tp5blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_conf` [ RunTime:0.039047s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002164s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.028287s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,5 [ RunTime:0.003182s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001584s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001323s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id asc LIMIT 0,5 [ RunTime:0.003582s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,3 [ RunTime:0.002460s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001534s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_comment` [ RunTime:0.154191s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_comment` WHERE  `aid` = 0 LIMIT 1 [ RunTime:0.002085s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_comment` WHERE  `aid` = 0 LIMIT 0,10 [ RunTime:0.002413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_comment` WHERE  `aid` = 0 LIMIT 1 [ RunTime:0.001751s ]
+---------------------------------------------------------------
+[ 2018-07-05T12:18:33+08:00 ] ::1 ::1 GET /Tp5Blog/public/index/test/index/id/js/jquery.min.js
+[ info ] localhost/Tp5Blog/public/index/test/index/id/js/jquery.min.js [运行时间：0.538834s][吞吐率：1.86req/s] [内存消耗：4,957.44kb] [文件加载：58]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/Tp5Blog/public/index/test/index/id/19.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=s600spp191hgjqpodf8v779951',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'js',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Test->index[ C:\wamp\www\Tp5Blog\application\index\controller\Test.php ]
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\public/../application/index\view\test\index.html [ array (
+  0 => 'conf',
+  1 => 'nivo',
+  2 => 'relevant',
+  3 => 'recent',
+  4 => 'details',
+  5 => 'comment',
+  6 => 'num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003735s ] mysql:dbname=tp5blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_conf` [ RunTime:0.035239s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001758s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.064046s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001448s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,5 [ RunTime:0.003235s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001388s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001178s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id asc LIMIT 0,5 [ RunTime:0.004338s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001741s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,3 [ RunTime:0.003369s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.009280s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_comment` [ RunTime:0.168292s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_comment` WHERE  `aid` = 0 LIMIT 1 [ RunTime:0.001572s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_comment` WHERE  `aid` = 0 LIMIT 0,10 [ RunTime:0.001375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_comment` WHERE  `aid` = 0 LIMIT 1 [ RunTime:0.001522s ]
+---------------------------------------------------------------
+[ 2018-07-05T12:18:33+08:00 ] ::1 ::1 GET /Tp5Blog/public/index/test/index/id/img/single-post.jpg
+[ info ] localhost/Tp5Blog/public/index/test/index/id/img/single-post.jpg [运行时间：0.653375s][吞吐率：1.53req/s] [内存消耗：4,957.61kb] [文件加载：58]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/public/index/test/index/id/19.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=s600spp191hgjqpodf8v779951',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'img',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Test->index[ C:\wamp\www\Tp5Blog\application\index\controller\Test.php ]
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\public/../application/index\view\test\index.html [ array (
+  0 => 'conf',
+  1 => 'nivo',
+  2 => 'relevant',
+  3 => 'recent',
+  4 => 'details',
+  5 => 'comment',
+  6 => 'num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008194s ] mysql:dbname=tp5blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_conf` [ RunTime:0.144770s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001811s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.112668s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001658s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,5 [ RunTime:0.003134s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002518s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001593s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id asc LIMIT 0,5 [ RunTime:0.004831s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.002259s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,3 [ RunTime:0.002867s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001929s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_comment` [ RunTime:0.066708s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_comment` WHERE  `aid` = 0 LIMIT 1 [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_comment` WHERE  `aid` = 0 LIMIT 0,10 [ RunTime:0.004540s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_comment` WHERE  `aid` = 0 LIMIT 1 [ RunTime:0.001843s ]
+---------------------------------------------------------------
+[ 2018-07-05T12:18:33+08:00 ] ::1 ::1 GET /Tp5Blog/public/index/test/index/id/js/modernizr.js
+[ info ] localhost/Tp5Blog/public/index/test/index/id/js/modernizr.js [运行时间：0.717140s][吞吐率：1.39req/s] [内存消耗：4,957.26kb] [文件加载：58]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/Tp5Blog/public/index/test/index/id/19.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=s600spp191hgjqpodf8v779951',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'js',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Test->index[ C:\wamp\www\Tp5Blog\application\index\controller\Test.php ]
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\public/../application/index\view\test\index.html [ array (
+  0 => 'conf',
+  1 => 'nivo',
+  2 => 'relevant',
+  3 => 'recent',
+  4 => 'details',
+  5 => 'comment',
+  6 => 'num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004152s ] mysql:dbname=tp5blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_conf` [ RunTime:0.154314s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001812s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.161554s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001342s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,5 [ RunTime:0.003121s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002142s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001440s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id asc LIMIT 0,5 [ RunTime:0.005563s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001615s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,3 [ RunTime:0.002944s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003142s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_comment` [ RunTime:0.062847s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_comment` WHERE  `aid` = 0 LIMIT 1 [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_comment` WHERE  `aid` = 0 LIMIT 0,10 [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_comment` WHERE  `aid` = 0 LIMIT 1 [ RunTime:0.001614s ]
+---------------------------------------------------------------
+[ 2018-07-05T12:18:39+08:00 ] ::1 ::1 GET /Tp5Blog/public/
+[ info ] localhost/Tp5Blog/public/ [运行时间：0.281534s][吞吐率：3.55req/s] [内存消耗：5,155.48kb] [文件加载：58]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/public/index/test/index/id/19.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=s600spp191hgjqpodf8v779951',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\Tp5Blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\public/../application/index\view\index\index.html [ array (
+  0 => 'conf',
+  1 => 'nivo',
+  2 => 'relevant',
+  3 => 'recent',
+  4 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002857s ] mysql:dbname=tp5blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_conf` [ RunTime:0.043550s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.048403s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001220s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,5 [ RunTime:0.002215s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id asc LIMIT 0,5 [ RunTime:0.002883s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,3 [ RunTime:0.001498s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,8 [ RunTime:0.003715s ]
+---------------------------------------------------------------
+[ 2018-07-05T12:20:07+08:00 ] ::1 ::1 GET /Tp5Blog/public/
+[ info ] localhost/Tp5Blog/public/ [运行时间：0.579495s][吞吐率：1.73req/s] [内存消耗：5,155.07kb] [文件加载：58]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\Tp5Blog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\public/../application/index\view\index\index.html [ array (
+  0 => 'conf',
+  1 => 'nivo',
+  2 => 'relevant',
+  3 => 'recent',
+  4 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002758s ] mysql:dbname=tp5blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_conf` [ RunTime:0.199560s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.146511s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,5 [ RunTime:0.002120s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id asc LIMIT 0,5 [ RunTime:0.003465s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,3 [ RunTime:0.002117s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1 [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY id desc LIMIT 0,8 [ RunTime:0.003390s ]
+---------------------------------------------------------------
+[ 2018-07-05T12:20:21+08:00 ] ::1 ::1 GET /Tp5Blog/public/admin
+[ info ] localhost/Tp5Blog/public/admin [运行时间：0.136271s][吞吐率：7.34req/s] [内存消耗：3,109.93kb] [文件加载：48]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T12:20:24+08:00 ] ::1 ::1 GET /Tp5Blog/public/admin/login/index.html
+[ info ] localhost/Tp5Blog/public/admin/login/index.html [运行时间：0.168390s][吞吐率：5.94req/s] [内存消耗：3,365.12kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=45h4cffuh43gkjc1gdr3r3c3t2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp\www\Tp5Blog\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\public/../application/admin\view\login\index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T12:20:25+08:00 ] ::1 ::1 GET /Tp5Blog/public/captcha.html
+[ info ] localhost/Tp5Blog/public/captcha.html [运行时间：0.272141s][吞吐率：3.67req/s] [内存消耗：2,559.55kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=45h4cffuh43gkjc1gdr3r3c3t2',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wamp\www\Tp5Blog\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T12:20:32+08:00 ] ::1 ::1 GET /Tp5Blog/public/captcha.html?0.6793119462840558
+[ info ] localhost/Tp5Blog/public/captcha.html?0.6793119462840558 [运行时间：0.249010s][吞吐率：4.02req/s] [内存消耗：2,559.55kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=45h4cffuh43gkjc1gdr3r3c3t2',
+)
+[ info ] [ PARAM ] array (
+  '0_6793119462840558' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wamp\www\Tp5Blog\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T12:20:38+08:00 ] ::1 ::1 POST /Tp5Blog/public/admin/login/index.html
+[ info ] localhost/Tp5Blog/public/admin/login/index.html [运行时间：0.614900s][吞吐率：1.63req/s] [内存消耗：5,122.90kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=45h4cffuh43gkjc1gdr3r3c3t2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '111111',
+  'code' => 'degs',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp\www\Tp5Blog\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002703s ] mysql:dbname=tp5blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_manage` [ RunTime:0.254073s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_manage` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.002931s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_level` [ RunTime:0.139141s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_level` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001902s ]
+---------------------------------------------------------------
+[ 2018-07-05T12:20:42+08:00 ] ::1 ::1 GET /Tp5Blog/public/admin/index/index.html
+[ info ] localhost/Tp5Blog/public/admin/index/index.html [运行时间：0.494128s][吞吐率：2.02req/s] [内存消耗：4,715.83kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=45h4cffuh43gkjc1gdr3r3c3t2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp\www\Tp5Blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\public/../application/admin\view\index\index.htm [ array (
+  0 => 'num',
+  1 => 'con',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032497s ] mysql:dbname=tp5blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_contact` [ RunTime:0.086542s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_contact` WHERE  `state` = 0 LIMIT 1 [ RunTime:0.001920s ]
+---------------------------------------------------------------
+[ 2018-07-05T12:20:42+08:00 ] ::1 ::1 GET /Tp5Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/Tp5Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.113824s][吞吐率：8.79req/s] [内存消耗：2,534.71kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/Tp5Blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=45h4cffuh43gkjc1gdr3r3c3t2',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-05T12:20:44+08:00 ] ::1 ::1 GET /Tp5Blog/public/admin/conf/lst.html
+[ info ] localhost/Tp5Blog/public/admin/conf/lst.html [运行时间：0.475052s][吞吐率：2.11req/s] [内存消耗：4,782.29kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'conf',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/Tp5Blog/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=45h4cffuh43gkjc1gdr3r3c3t2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Conf->lst[ C:\wamp\www\Tp5Blog\application\admin\controller\Conf.php ]
+[ info ] [ VIEW ] C:\wamp\www\Tp5Blog\public/../application/admin\view\conf\lst.htm [ array (
+  0 => 'num',
+  1 => 'con',
+  2 => 'conf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003110s ] mysql:dbname=tp5blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_contact` [ RunTime:0.082881s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_contact` WHERE  `state` = 0 LIMIT 1 [ RunTime:0.001481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_conf` [ RunTime:0.072290s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_conf` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001536s ]
+---------------------------------------------------------------
+[ 2018-07-05T12:20:45+08:00 ] ::1 ::1 GET /Tp5Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/Tp5Blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.169427s][吞吐率：5.90req/s] [内存消耗：2,534.71kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp\www\Tp5Blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/Tp5Blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'bdshare_firstime=1515672034034; Phpstorm-65c5147=0b9fcf51-9d86-4b95-8203-af057c2f4883; pgv_pvi=3471364096; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1529981660; PHPSESSID=45h4cffuh43gkjc1gdr3r3c3t2',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    {include file="public/title"}
+</head>
+<body>
+<!-- 头部 -->
+{include file="public/top"}
+<!-- /头部 -->
+
+<div class="main-container container-fluid">
+    <div class="page-container">
+        {include file='public/left'}
+        <!-- /Sidebar Menu -->
+    </div>
+    <!-- /Page Sidebar -->
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <!-- Page Breadcrumb -->
+        <div class="page-breadcrumbs">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">系统</a>
+                </li>
+                <li class="active">企业关于编辑</li>
+            </ul>
+        </div>
+        <!-- /Page Breadcrumb -->
+
+        <!-- Page Body -->
+        <div class="page-body">
+
+            <button type="button" tooltip="添加用户" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '{:url("add",['id'=>1])}  '"> <i class="fa fa-plus"></i> 内容编辑
+            </button>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <div class="widget-body">
+                            <div class="flip-scroll">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="">
+                                    <tr>
+                                        <th class="text-center">描述</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    <tr>
+
+                                        <td align="center">{$a.content}</td>
+
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div style="padding-top:10px;">
+
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /Page Body -->
+    </div>
+    <!-- /Page Content -->
+</div>
+</div>
+
+{include file='public/footer'}
+
+
+
+</body></html>
